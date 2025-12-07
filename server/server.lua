@@ -1,7 +1,7 @@
 lib.locale()
 
 local currentVersion = '1.0.0'
-local versionURL = ''
+local versionURL = 'https://github.com/RuubTv/rtv-evidencelockers/blob/main/version.txt'
 local EvidenceStashes = {}
 
 
