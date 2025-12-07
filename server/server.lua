@@ -1,6 +1,6 @@
 lib.locale()
 
-local currentVersion = '1.0.6'
+local currentVersion = '1.0.0'
 local versionURL = ''
 local EvidenceStashes = {}
 
