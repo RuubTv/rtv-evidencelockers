@@ -1,0 +1,35 @@
+fx_version 'cerulean'
+game 'gta5'
+
+lua54 'yes'
+
+author 'RuubTv'
+description 'A Corrupt free Evidence system '
+version '1.0.0'
+
+shared_script {
+  '@ox_lib/init.lua',
+  'config.lua',
+}
+
+files {
+  'locales/*.json',
+}
+
+client_scripts {
+  'client/*.lua',
+  --'@sleepless_interact/init.lua',
+}
+
+server_scripts {
+  'server/*.lua',
+  '@oxmysql/lib/MySQL.lua'
+}
+
+dependencies {
+  'ox_lib',
+  'ox_inventory',
+  'qbx_core',
+  'ox_target',
+  'oxmysql',
+}
