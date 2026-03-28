@@ -5,35 +5,6 @@ local versionURL = 'https://raw.githubusercontent.com/RuubTv/rtv-evidencelockers
 
 local EvidenceStashes = {}
 
-local RankMap = {
-    police = function(grade)
-        return grade
-    end,
-
-    bcso = function(grade)
-        if grade == 6 then return 7 end
-        return grade
-    end,
-
-    fib = function(grade)
-        if grade == 0 then return 8 end
-        return grade
-    end,
-
-    da = function(grade)
-        if grade == 0 then return 8 end
-        return grade
-    end,
-
-    mcu = function(grade)
-        if grade == 0 then return 7 end
-        if grade == 1 then return 8 end
-        if grade == 2 then return 9 end
-        if grade == 3 then return 11 end
-        return grade
-    end,
-}
-
 CreateThread(function()
     PerformHttpRequest(versionURL, function(status, response, _)
         if not response or status ~= 200 then
