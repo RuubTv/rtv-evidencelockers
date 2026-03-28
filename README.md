@@ -43,4 +43,4 @@ Run the included SQL file:
 - sql.sql
 Add the resource to your server.cfg:
 
-'ensure rtvevidencelockers'
+'ensure rtv-evidencelockers'
